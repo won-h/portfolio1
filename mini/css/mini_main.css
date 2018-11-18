@@ -1,0 +1,151 @@
+article, aside, hgroup, header, footer, figure, figcaption, nav, section,time, mark, canvas, video, audio, details, summary, menu { display:block; }
+html { width:100%; height:100%; /*overflow-y:scroll;*/ }
+body { width:100%; height:100%; min-height:100%; color:#000; -webkit-text-size-adjust:none; }
+body { *word-break:break-all; -ms-word-break:break-all; word-break:break-all; }
+body, p, div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select { margin:0; padding:0; font-family: 'notokr', 'sans-serif'; text-decoration:none; }
+body, div, th, td, input, textarea, select, button, table, h1, h2, h3, h4, h5, h6, label, legend { font-family: 'notokr', 'sans-serif'; text-decoration:none; color:#666;}
+img, fieldset, iframe { border:0 none; }
+a:hover, a:active, a:focus { text-decoration:none; }
+li, dd, ul, ol { list-style:none; }
+em, address { font-style:normal; }
+a { text-decoration:none; font-family: 'notokr', 'sans-serif';}
+.section { text-align:center; }
+
+#gnb { position:fixed; width:100%; height:80px; z-index:10; }
+#gnb > div { max-width:1200px; height:80px; margin:0 auto; }
+#gnb > div:after { content:" "; display:block; clear:both; }
+#gnb ul.wrap { float:right; margin-top:20px; }
+#gnb ul.wrap li { background:url('http://www.won-h.com/portfolio/mini/img/header_icon.png') no-repeat; float:left; margin-right:20px; }
+#gnb ul.wrap li.mouse_ico { width:20px; height:35px ; background-position:-10px -10px; }
+#gnb ul.wrap li.keyboard_ico { width:38px; height:25px; background-position:-40px -15px; margin-top:5px; }
+
+#section1 { background-color:#1e6ed3; position:relative; }
+#section1 #loading { width:100%; height:100%; position:fixed; top:0; left:0; background-color:rgba(0,0,0,0.98);  z-index:99; }
+#section1 #loading span { position:absolute; top:-2px; left:0; bottom:0; right:0; margin:auto; transition:all .3s; color:#fff; width:14px; height:17px; 
+	-webkit-animation-name: logo_spelling; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+	animation-name: logo_spelling;
+	animation-duration: 2s;
+	animation-iteration-count:initial; 
+	}
+	/* Safari 4.0 - 8.0 */
+	@-webkit-keyframes logo_spelling {
+		0% { transform:translate(0,0); }
+		33% { transform:translate(0,-4px); }
+		66% { transform:translate(0,4px); }
+		100% { transform:translate(0,0); }
+	}
+	/* Standard syntax */
+	@keyframes logo_spelling {
+		0% { transform:translate(0,0); }
+		33% { transform:translate(0,-4px); }
+		66% { transform:translate(0,4px); }
+		100% { transform:translate(0,0); }
+	}
+#section1 #loading span.m { right:27px; animation-delay: 1s; -webkit-animation-delay: 1s;}
+#section1 #loading span.i1 { right:6px; animation-delay: 1.2s; -webkit-animation-delay: 1.2s;}
+#section1 #loading span.n { left:14px; animation-delay: 1.4s; -webkit-animation-delay: 1.4s;}
+#section1 #loading span.i2 { left:32px; animation-delay: 1.6s; -webkit-animation-delay: 1.6s;}
+#section1 #loading img.mini_logo { position:absolute; top:0; left:0; bottom:0; right:0; margin:auto; width:150px; }
+#section1 .section1_title { max-width:810px; margin:0 auto; }
+#section1 .section1_title h1 { color:#fff; font-size:34px; letter-spacing:-1px; font-weight:400; margin-bottom:40px; }
+#section1 .section1_title h1 span { color:#ff8181; }
+#section1 .section1_title h1 strong { font-size:90px; font-weight:bold; letter-spacing:-5px; line-height:100px; }
+#section1 .section1_title h3 { color:#fff; border:2px solid #fff; border-radius:50px; font-size:22px; width:660px; margin:0 auto; font-weight:400; letter-spacing:-1px; height:40px; line-height:40px; }
+#section1 .mini_silhouette { width:810px; height:100px; margin:0 auto; position:relative;}
+#section1 .mini_silhouette img { position:absolute; right:0; bottom:0; transition:all .2s;
+	-webkit-animation-name: mini_silhouette; /* Safari 4.0 - 8.0 */
+	-webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+	animation-name: mini_silhouette;
+	animation-duration: 3s;
+	animation-iteration-count:infinite;
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mini_silhouette {
+	0% { opacity:0; }
+	100% { opacity:1; right:720px; }
+}
+/* Standard syntax */
+@keyframes mini_silhouette {
+	0% { opacity:0; }
+	100% { opacity:1; right:720px; }
+}
+#section1 video { width:810px; margin:0 auto; border-radius:10px; border:2px solid #fff; }
+
+#slide2_1 { background-color:#0079d6; }
+#slide2_2 { background-color:#b61f1f; }
+#section2 .wrap { max-width:1200px; margin:0 auto; text-align:left; }
+#section2 .contents { position:relative; min-height:526px; }
+#section2 .contents:after { content:" "; display:block; clear:both; }
+#section2 .contents .right { float:right; background:url('http://www.won-h.com/portfolio/mini/img/convertible_green.png') no-repeat; width:691px; height:526px; position:absolute; right:0; }
+#slide2_2 .contents .right { background:url('http://www.won-h.com/portfolio/mini/img/convertible_red.png') no-repeat;}
+#section2 .contents .left { float:left; }
+#section2 p.event_title { width:308px; height:64px; transform:skew(-20deg); border:6px solid #fff; box-sizing:border-box; color:#fff; text-align:right; font-size:34px; padding-right:20px; margin-left:20px; }
+#section2 h2 { color:#fff; font-size:60px; font-weight:bold; letter-spacing:-3px; margin: 15px 0; }
+#section2 .txt { margin:40px 0; color:#fff; font-size:22px; }
+#section2 .txt ul { display:inline-block; padding-left:30px; }
+#section2 .txt ul.ul1 li { color:#fff; text-align:right; font-size:24px; font-weight:500; height:46px; line-height:46px; }
+#section2 .txt ul.ul2 li { color:#ffdf2b; font-size:20px; font-weight:400; height:46px; line-height:46px; }
+#section2 p.foottxt { font-family:'돋움','sans-serif'; color:#85caff; font-size:12px; margin-top:90px; line-height:20px; padding-left:5px; }
+#slide2_2 p.foottxt { color:#fa8888; }
+
+#section3 { background-color:#1e6ed3; }
+#section3 .wrap { max-width:480px; margin:0 auto; text-align:left; }
+#section3 .wrap .contents {  }
+#section3 .wrap .contents > p.input_title { color:#fff; font-size:32px; font-weight:400; margin-bottom:40px; letter-spacing:-2px; }
+#section3 .wrap .contents .listinput { margin-bottom:30px; }
+#section3 .wrap .contents .listinput ul { display:inline-block; }
+#section3 .wrap .contents .listinput ul.list3 {  }
+#section3 .wrap .contents .listinput ul.list3 li { color:#fff; font-size:22px; font-weight:400; height:60px; line-height:60px; }
+#section3 .wrap .contents .listinput ul.input3 { margin-left:52px;  }
+#section3 .wrap .contents .listinput ul.input3 li { height:60px; line-height:60px; }
+#section3 .wrap .contents .listinput ul.input3 li input { background-color:#fff; border:0; border-radius:4px; width:317px; height:46px; box-sizing:border-box; padding-left:10px; }
+#section3 .wrap .contents .agree {}
+#section3 .wrap .contents .agree input { width:12px; height:12px; }
+#section3 .wrap .contents .agree label { color:#fff; font-family:'돋움','sans-serif'; font-size:12px; }
+#section3 .wrap .contents .agree > a { width:100%; height:60px; line-height:60px; color:#282828; background:#fff; display:block; border-radius:4px; margin:10px 0; box-sizing:border-box; padding-left:10px; font-family:'돋움', 'sans-serif'; font-size:12px; }
+#section3 .wrap .contents .agree a.agr1 { margin-top:30px; }
+#section3 .wrap .contents .agree a.agr2 { margin-bottom:30px; }
+#section3 .wrap .contents button { display:block; width:100%; height:60px; line-height:60px; text-align:center; background-color:#083a7a; color:#fff; font-size:22px; letter-spacing:-1px; cursor:pointer; border:0; border-radius:4px; }
+
+.fp-slidesNav ul li a span { background-color:#fff; }
+.fp-controlArrow { transform:scale(0.9); transition:all .3s; }
+.fp-controlArrow:hover { transform:scale(1);  }
+.fp-controlArrow.fp-prev { background:url('http://www.won-h.com/portfolio/mini/img/arrow.png') no-repeat; width:36px; height:60px; border:0; background-position:-10px -10px; left:40px;}
+.fp-controlArrow.fp-next { background:url('http://www.won-h.com/portfolio/mini/img/arrow.png') no-repeat; width:36px; height:60px; border:0; background-position:-52px -10px; right:40px;}
+
+
+@media all and (max-width:800px) {
+#section1 .section1_title { width:90%; max-width:90%; }
+#section1 .section1_title h1 { font-size:1.6em; }
+#section1 .section1_title h1 strong { font-size:1.7em; line-height:1.2em; letter-spacing:-0.08em; }
+#section1 .section1_title h3 { width:90%; font-size:1em; border:0; line-height:1.4em; }
+#section1 .section1_title h3 span { display:block; }
+#section1 video { width:90%; }
+
+#section2 .contents .right { background-size:90%; width:90%; height:43%; margin-top:-3%; }
+#section2 .contents .left { padding:0 5%; box-sizing:border-box; position:absolute; margin-top:62%; }
+#section2 p.event_title { display:none; }
+#section2 h2 { font-size:2em; letter-spacing:-2px; }
+#section2 .txt { margin:20px 0; font-size:1em; }
+#section2 .txt ul { padding-left:3px; }
+#section2 .txt ul.ul1 li { font-size:1em; height:2em; line-height:2em; }
+#section2 .txt ul.ul2 li { font-size:1em; height:2em; line-height:2em; }
+#section2 p.foottxt { font-size:0.8em; margin-top:23px; line-height:1.4em; }
+#slide2_1 .txt { margin:0; }
+#slide2_1 p.foottxt { margin-top:10px; font-size:0.7em; }
+.fp-controlArrow { display:none; }
+
+#section3 .wrap { width:90%; max-width:90%; box-sizing:border-box; padding:5%; }
+#section3 .wrap .contents > p.input_title { font-size:2em; }
+#section3 .wrap .contents .listinput ul.list3 { width:30%; }
+#section3 .wrap .contents .listinput ul.list3 li { font-size:1em; height:2.8em; line-height:2.8em; }
+#section3 .wrap .contents .listinput ul.input3 { width:68%; margin:0; }
+#section3 .wrap .contents .listinput ul.input3 li { height:2.8em; line-height:2.8em; }
+#section3 .wrap .contents .listinput ul.input3 li input { width:100%; height:2.8em; }
+#section3 .wrap .contents .agree > a { height:3em; line-height:3em; }
+}
+
+@media all and (max-width:340px) {
+#section2 .txt ul.ul1 { display:none; }
+}
