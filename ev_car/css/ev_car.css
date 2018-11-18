@@ -1,0 +1,209 @@
+article, aside, hgroup, header, footer, figure, figcaption, nav, section,time, mark, canvas, video, audio, details, summary, menu { display:block; }
+html { width:100%; height:100%; overflow-y:scroll; }
+body { width:100%; height:100%; min-height:100%; background-color:white; color:#000; -webkit-text-size-adjust:none; }
+body { *word-break:break-all; -ms-word-break:break-all; word-break:break-all; }
+body, p, div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select { margin:0; padding:0; font-family: 'notokr', 'sans-serif'; text-decoration:none; }
+body, div, th, td, input, textarea, select, button, table, h1, h2, h3, h4, h5, h6, label, legend { font-family: 'notokr', 'sans-serif'; text-decoration:none; color:#1d1d1d;}
+img, fieldset, iframe { border:0 none; }
+a:hover, a:active, a:focus { text-decoration:none; }
+li, dd, ul, ol { list-style:none; }
+em, address { font-style:normal; }
+a { text-decoration:none; font-family: 'notokr', 'sans-serif'; color:#000; font-weight:400; cursor:pointer; }
+.clear { clear:both; }
+
+header { width:100%; height:88px; background-color:#fff; position:fixed; transition:all .2s; z-index:10; border-bottom:1px solid #eee; box-sizing:border-box; top:0; }
+header.ts { height:50px; }
+header nav { width:1200px; margin:0 auto; }
+header nav a.logo { position:absolute; top:0; left:0; right:0; bottom:0; margin:auto; width:149px; height:52px; }
+header nav a.logo img { display:block; margin:0 auto; }
+header nav a.logo img.is { display:none; margin-top:10px; }
+header nav ul.gnb { display:inline-block; }
+header nav ul.gnb > li { line-height:88px; transition:all .2s; float:left; }
+header nav ul.gnb > li.ts { line-height:50px; }
+header nav ul.gnb.gnb_right { float:right; }
+header nav ul.gnb li.pc_right {  }
+header nav ul.gnb > li > a { margin-right:25px; font-size:18px; font-weight:500; }
+header nav ul.gnb > li.pc_right > a { margin-right:0; margin-left:25px; }
+header nav ul.gnb > li > a.ts { font-size:16px; }
+header nav ul.gnb a#mobile_menu { display:none; transition:all .2s; }
+
+/*gnb_sub*/
+header nav ul.gnb li div.gnb_sub { position:absolute; width:100%; height:55px; line-height:55px; left:0; top:88px; background-color:#ebebeb; display:none; }
+header.ts nav ul.gnb li div.gnb_sub { top:50px; }
+header nav ul.gnb li div.gnb_sub.open { display:block; }
+header nav ul.gnb li div.gnb_sub ul.wrap { width:1200px; margin:0 auto; }
+header nav ul.gnb li div.gnb_sub ul.wrap li { float:left; margin-right:20px; }
+header nav ul.gnb li div.gnb_sub ul.wrap li a { font-size:15px; font-weight:500; }
+header nav ul.gnb li div.gnb_sub ul.wrap:after { content:" "; display:block; clear:both; }
+header nav ul.gnb:after { content:" "; display:block; clear:both; }
+
+div.index_main { background:url('http://www.won-h.com/portfolio/ev_car/img/ev_main.png') no-repeat; width:100%; height:90%; background-position:50% -50px; margin-top:88px;}
+div.index_main div.wrap { width:1200px; margin:0 auto; padding-top:220px; }
+div.index_main h1,
+div.index_main h2 { color:#fff; text-shadow:3px 3px 20px #2b2b2b; font-weight:bold; }
+div.index_main h1 { font-size:52px; letter-spacing:-0.8px; }
+div.index_main h2 { font-size:21px; font-weight:400; margin-top:20px; }
+div.index_main a { display:inline-block; margin-top:120px; width:200px; height:50px; line-height:50px; text-align:center; color:#fff; background-color:#32b6f7; border-radius:50px; }
+
+div.middle_banner { background-color:#fff; }
+div.middle_banner .wrap { width:1200px; margin:0 auto;}
+div.middle_banner .wrap a.ne_banner { display:block; margin-top:120px; width:100%; height:287px; background:url('http://www.won-h.com/portfolio/ev_car/img/ne_banner_img2.png') right no-repeat; background-color:#f6f6f6;}
+div.middle_banner .wrap a.ne_banner span { display:block; background:#0fa5ef; border-radius:0 3px 3px 0; width:400px; height:4px; transform:translate(-50px,0); opacity:0; transition-duration:0.6s; transition-delay:0.1s;}
+div.middle_banner .wrap a.ne_banner span.ts { transform:translate(0,0); opacity:1; transition-duration:0.6s; transition-delay:0.1s; }
+div.middle_banner .wrap a.ne_banner h2 { color:#0fa5ef; letter-spacing:-1.6px; font-size:37px; padding:70px 0 0 40px;}
+div.middle_banner .wrap a.ne_banner h3 { font-weight:500; font-size:17px; padding:30px 0 0 40px; letter-spacing:-0.4px;}
+div.middle_banner .wrap .side_menu { margin:100px auto;  }
+div.middle_banner .wrap .side_menu ul {  }
+div.middle_banner .wrap .side_menu ul li { width:33.33%; height:360px; float:left; overflow:hidden; }
+div.middle_banner .wrap .side_menu ul li.list1 { background:url('http://www.won-h.com/portfolio/ev_car/img/list1_5img.png') 50% no-repeat; background-color:#eff4f7; background-size:138%;}
+div.middle_banner .wrap .side_menu ul li.list2 { background:url('http://www.won-h.com/portfolio/ev_car/img/list1_2img.png') 50% no-repeat; background-color:#e0e7ec; }
+div.middle_banner .wrap .side_menu ul li.list3 { background:url('http://www.won-h.com/portfolio/ev_car/img/list1_4img.png') 50% no-repeat; background-color:#f3f3f5; }
+div.middle_banner .wrap .side_menu ul li a { width:100%; height:100%; display:block; transition:all .2s; }
+div.middle_banner .wrap .side_menu ul li a span { display:inline-block; color:#fff; background:#32b6f7; border-radius:3px; margin:30px 0 0 38px; padding:4px 8px;}
+div.middle_banner .wrap .side_menu ul li a:hover { background:rgba(0,0,0,0.6); }
+div.middle_banner .wrap .side_menu ul:after { content:" "; display:block; clear:both; }
+
+div.card { width:100%; height:430px; background:url('http://www.won-h.com/portfolio/ev_car/img/card_bgimg.jpg') no-repeat; background-position:50% -130px; position:relative; }
+div.card .wrap { width:1200px; height:430px; position:relative; margin:0 auto;  }
+div.card .cardbox { background-color:#32b6f7; color:#fff; width:300px; height:286px; position:absolute; right:0; bottom:0; padding:30px 20px; box-sizing:border-box; transition-duration:0.6s; transition-delay:0.1s; transform:translate(0,-144px);}
+div.card .cardbox.ts { transition-duration:0.6s; transition-delay:0.1s; transform:translate(0,0); }
+div.card .cardbox h4 { color:#fff; font-size:20px; font-weight:400; }
+div.card .cardbox h3 { color:#fff; font-weight:bold; font-size:30px; line-height:34px; margin-top:30px; }
+div.card .cardbox h3 span { font-weight:500; }
+div.card .cardbox a { width:60px; height:32px; line-height:32px; background:#fff; color:#32b6f7; text-align:center; border-radius:3px; position:absolute; right:30px; bottom:30px; }
+div.card .cardbox a span { position:absolute; width:12px; height:2px; border-radius:10px; background:#32b6f7; left:24px; }
+div.card .cardbox a span.sp1 { transform:rotate(45deg); top:11px; }
+div.card .cardbox a span.sp2 { transform:rotate(-45deg); top:19px; }
+div.notice_banner { width:100%; height:600px; background-color:#f0f0f0; position:relative;}
+div.notice_banner .wrap { width:1200px; height:360px; position:absolute; top:0; left:0; right:0; bottom:50px; margin:auto; }
+div.notice_banner .wrap .guide { float:left; width:870px; height:360px; background-color:#fff; overflow:hidden; position:relative; }
+div.notice_banner .wrap .guide > span { display:inline-block; color:#fff; background:#32b6f7; border-radius:3px; margin:30px 0 0 28px; padding:4px 8px;}
+div.notice_banner .wrap .guide a.other { display:inline-block; width:21px; height:21px; position:absolute; top:35px; right:35px; }
+div.notice_banner .wrap .guide a.other span.horizontal { width:100%; height:3px; background:#32b6f7; position:absolute; top:0; left:0; right:0; bottom:0; margin:auto; }
+div.notice_banner .wrap .guide a.other span.vertical { width:3px; height:100%; background:#32b6f7; position:absolute; top:0; left:0; right:0; bottom:0; margin:auto; }
+
+div.notice_banner .wrap .notice { float:right; width:300px; height:360px; background-color:#fff; overflow:hidden; position:relative;}
+div.notice_banner .wrap .notice > span { display:inline-block; color:#fff; background:#32b6f7; border-radius:3px; margin:30px 0 0 28px; padding:4px 8px;}
+div.notice_banner .wrap .notice a.other { display:inline-block; width:21px; height:21px; position:absolute; top:35px; right:35px; }
+div.notice_banner .wrap .notice a.other span.horizontal { width:100%; height:3px; background:#32b6f7; position:absolute; top:0; left:0; right:0; bottom:0; margin:auto; }
+div.notice_banner .wrap .notice a.other span.vertical { width:3px; height:100%; background:#32b6f7; position:absolute; top:0; left:0; right:0; bottom:0; margin:auto; }
+div.notice_banner .wrap:after { content:" "; display:block; clear:both; }
+
+/**/
+div.notice_banner .wrap .guide div {overflow:hidden;height:300px;width:2610px}
+div.notice_banner .wrap .guide div a { float:left; display:block;}  
+div.notice_banner .wrap .guide div a img { width:870px; height:300px;margin-right:10px;}
+
+div.notice_banner .wrap .notice div {overflow:hidden;height:300px;width:900px}
+div.notice_banner .wrap .notice div a { float:left; display:block;}  
+div.notice_banner .wrap .notice div a img { width:300px; height:300px;margin-right:10px;}
+div.notice_banner .wrap .banner_nav { text-align:center; margin-top:30px; }
+div.notice_banner .wrap .banner_nav button { border:1px solid #32b6f7; width:50px; height:50px; background-size:50px !important; cursor:pointer; border-radius:50%; overflow:hidden; margin:0 5px; }
+div.notice_banner .wrap .banner_nav button.left { background:url('http://www.won-h.com/portfolio/ev_car/img/b_button_left.png') no-repeat; }
+div.notice_banner .wrap .banner_nav button.right { background:url('http://www.won-h.com/portfolio/ev_car/img/b_button_right.png') no-repeat; }
+div.notice_banner .wrap .banner_nav button.stop { background:url('http://www.won-h.com/portfolio/ev_car/img/b_button_stop.png') 50% no-repeat; }
+div.notice_banner .wrap .banner_nav button.play { background:url('http://www.won-h.com/portfolio/ev_car/img/b_button_play.png') 50% no-repeat; }
+/**/
+
+footer { width:100%; padding-bottom:50px; background-color:#363636; }
+footer button.top_arrow { background:url('http://www.won-h.com/portfolio/ev_car/img/top_arrow.png') no-repeat; position:fixed; bottom:4%; right:4%; border:0; width:90px; height:90px; transform:translate(0,50px); opacity:0; transition-duration:0.6s; transition-delay:0.1s; cursor:pointer;}
+footer button.top_arrow.ts { transform:translate(0,0); opacity:1; transition-duration:0.6s; transition-delay:0.1s; }
+footer .wrap { width:1200px; margin:0 auto; padding-top:55px; position:relative; }
+footer .wrap ul li a,
+footer .wrap div p { color:#fff; font-family:'돋움','dotum'; font-size:12px; line-height:20px; }
+footer .wrap ul:after { content:" "; display:block; clear:both; }
+footer .wrap ul li { float:left; }
+footer .wrap ul li:after { width:1px; height:9px; background:#fff; display:inline-block; content:" "; margin:0 8px; }
+footer .wrap ul li:last-child:after { display:none; }
+footer .wrap div.info { margin:30px 0 60px 0; }
+footer .wrap div.related { position:absolute; bottom:0; right:0; }
+footer .wrap div.related a { background:url('http://www.won-h.com/portfolio/ev_car/img/related_logo.png') no-repeat; display:inline-block; }
+footer .wrap div.related a.logo1 { width:36px; height:36px; background-position:-8px -2px; margin:0 16px; }
+footer .wrap div.related a.logo2 { width:36px; height:36px; background-position:-57px -4px; margin:0 16px; }
+footer .wrap div.related a.logo3 { width:44px; height:36px; background-position:-100px -5px; margin:0 20px; }
+footer .wrap div.related a.logo4 { width:73px; height:49px; background-position:-154px -2px; }
+footer .wrap div.related a span { display:block; margin-top:45px; font-size:11px; font-family:'돋움','dotum'; color:#ececec; }
+footer .wrap div.related a.logo1 span { text-indent:-2px; width:50px; letter-spacing:4px; }
+footer .wrap div.related a.logo2 span { text-indent:-11px; width:70px; letter-spacing:-1px; }
+footer .wrap div.related a.logo3 span { text-indent:-13px; width:80px; letter-spacing:-1px; }
+
+/*전기차의특징*/
+article.introduce_art1 { width:100%; height:900px; background-color:#fff; padding-top:120px; box-sizing:border-box; margin-top:88px;}
+article.introduce_art1 .wrap { width:1200px; margin:0 auto; }
+article.introduce_art1 .wrap:after { content:" "; display:block; clear:both; }
+article.introduce_art1 .wrap h2 { text-align:center; font-weight:400; font-size:50px; letter-spacing:-3px; }
+article.introduce_art1 .wrap h3 { text-align:center; font-weight:400; font-size:22px; letter-spacing:-1px;}
+article.introduce_art1 .wrap div { float:left; width:270px; height:550px; margin:50px 40px 0 0; }
+article.introduce_art1 .wrap div:last-child { margin-right:0; }
+article.introduce_art1 .wrap div.box1 { background:url('http://www.won-h.com/portfolio/ev_car/img/box1_img.png') top no-repeat; }
+article.introduce_art1 .wrap div.box2 { background:url('http://www.won-h.com/portfolio/ev_car/img/box2_img.png') top no-repeat; }
+article.introduce_art1 .wrap div.box3 { background:url('http://www.won-h.com/portfolio/ev_car/img/box3_img.png') top no-repeat; }
+article.introduce_art1 .wrap div.box4 { background:url('http://www.won-h.com/portfolio/ev_car/img/box4_img.png') top no-repeat; }
+article.introduce_art1 .wrap div p { color:#fff; font-size:30px; font-weight:bold; padding-left:20px; margin-top:230px; line-height:25px; }
+article.introduce_art1 .wrap div.box4 p { color:#272727; }
+article.introduce_art1 .wrap div p span { color:#444; font-size:19px; font-weight:400; letter-spacing:-0.2px; }
+
+article.introduce_art2 { width:100%; height:900px; background-color:#f4f4f4; padding-top:160px; box-sizing:border-box; }
+article.introduce_art2 .wrap { width:1200px; margin:0 auto; transition-duration:0.6s; transition-delay:0.1s; transform:translate(0,100px); opacity:0; }
+article.introduce_art2 .wrap.ts { transition-duration:0.6s; transition-delay:0.1s; transform:translate(0,0); opacity:1;}
+article.introduce_art2 .wrap:after { content:" "; display:block; clear:both; }
+article.introduce_art2 .wrap .wrap_left { width:600px; height:580px; float:left; border-bottom:4px solid #01b9bb; border-radius:3px; overflow:hidden; }
+article.introduce_art2 .wrap .wrap_left .l300 { width:300px; height:580px; float:left; position:relative; }
+article.introduce_art2 .wrap .wrap_left .r300 { width:300px; height:580px; float:left; position:relative; }
+article.introduce_art2 .wrap .wrap_right { width:600px; height:580px; float:left; border-top:4px solid #01b9bb; border-radius:3px; overflow:hidden; }
+article.introduce_art2 .wrap .wrap_right .l300 { width:300px; height:580px; float:left; position:relative; box-sizing:border-box; }
+article.introduce_art2 .wrap .wrap_right .r300 { width:300px; height:580px; float:left; position:relative; box-sizing:border-box;}
+article.introduce_art2 .wrap img { position:absolute; top:50px; }
+article.introduce_art2 .wrap p { position:absolute; top:200px; font-size:24px; font-weight:500; letter-spacing:-1.7px; }
+article.introduce_art2 .wrap span { position:absolute; top:250px; font-size:20px; font-weight:400; letter-spacing:-0.4px; }
+article.introduce_art2 .wrap .wrap_right img { position:absolute; top:150px; }
+article.introduce_art2 .wrap .wrap_right p { position:absolute; top:300px; font-size:24px; font-weight:500; letter-spacing:-1.7px; }
+article.introduce_art2 .wrap .wrap_right span { position:absolute; top:350px; font-size:20px; font-weight:400; letter-spacing:-0.4px; }
+article.introduce_art2 .wrap .wrap_right .r300 p { font-size:22px; }
+
+article.introduce_art3 { width:100%; height:900px; background-color:#fff; padding-top:110px; box-sizing:border-box; }
+article.introduce_art3 .wrap { width:1200px; margin:0 auto; }
+article.introduce_art3 .wrap:after { content:" "; display:block; clear:both; }
+article.introduce_art3 .wrap .wrap_left { width:600px; float:left; }
+article.introduce_art3 .wrap .wrap_left p { font-size:20px; font-weight:500; letter-spacing:-1.7px; margin:0;}
+article.introduce_art3 .wrap .wrap_left p:first-child { font-size:28px; font-weight:500; letter-spacing:-1.7px; margin-bottom:50px; }
+article.introduce_art3 .wrap .wrap_left img { display:block; margin:20px 0; }
+article.introduce_art3 .wrap .wrap_left span { font-family:'돋움','dotum'; font-size:12px; display:inline-block; line-height:18px; color:#616161; }
+article.introduce_art3 .wrap .wrap_right { width:600px; float:left; }
+article.introduce_art3 .wrap .wrap_right:after { content:" "; display:block; clear:both; }
+article.introduce_art3 .wrap .wrap_right p { font-size:28px; font-weight:500; letter-spacing:-1.7px; margin-bottom:50px; }
+article.introduce_art3 .wrap .wrap_right img { display:inline-block; float:left; margin:20px 0; }
+article.introduce_art3 .wrap .wrap_right span { font-family:'돋움','dotum'; font-size:12px; display:inline-block; line-height:18px; color:#616161; margin-top:30px;}
+article.introduce_art3 .wrap .wrap_right span:last-child { margin-top:150px; }
+article.introduce_art3 .wrap p.copy { text-align:right; margin-top:90px; }
+
+/*보급목적*/
+article.purpose_art1 { width:100%; height:42px; background-color:#fff; padding-top:120px; margin-top:88px;}
+article.purpose_art1 .wrap { width:1200px; height:42px; margin:0 auto; text-align:center; }
+article.purpose_art1 .wrap ul { display:inline-block; }
+article.purpose_art1 .wrap ul:after { content:" "; display:block; clear:both; }
+article.purpose_art1 .wrap ul li { float:left; margin:0 10px; }
+article.purpose_art1 .wrap ul li a { background-color:#d7d7d7; color:#282828; display:inline-block; width:160px; height:42px; line-height:42px; font-weight:400; font-size:20px; border-radius:3px; text-align:center; letter-spacing:-0.6px; }
+article.purpose_art1 .wrap ul li a.on,
+article.purpose_art1 .wrap ul li a:hover { background-color:#32b6f7; color:#fff;  }
+
+article.purpose_art2.case1 { width:100%; background-color:#fff; box-sizing:border-box; }
+article.purpose_art2.case1 .wrap { width:1200px; margin:0 auto; text-align:center; padding-bottom:120px; }
+article.purpose_art2.case1 h2,
+article.purpose_art2.case1 h3 { font-weight:500; font-size:18px; letter-spacing:-0.4px; text-align:center; color:#616161; }
+article.purpose_art2.case1 h2 { font-size:24px; letter-spacing:-1.2px; margin:100px 0 30px 0;}
+article.purpose_art2.case1 img { margin-top:25px; }
+
+article.purpose_art2.case2 { width:100%; background-color:#fff; box-sizing:border-box; display:none;}
+article.purpose_art2.case2 .wrap { width:1200px; margin:0 auto; text-align:center; padding-bottom:120px; }
+article.purpose_art2.case2 h2,
+article.purpose_art2.case2 h3 { font-weight:500; font-size:18px; letter-spacing:-0.4px; text-align:center; color:#616161; }
+article.purpose_art2.case2 h2 { font-size:24px; letter-spacing:-1.2px; margin:100px 0 30px 0;}
+article.purpose_art2.case2 img { margin-top:25px; }
+
+article.purpose_art2.case3 { width:100%; background-color:#fff; box-sizing:border-box; display:none;}
+article.purpose_art2.case3 .wrap { width:1200px; margin:0 auto; text-align:center; padding-bottom:120px; }
+article.purpose_art2.case3 h2,
+article.purpose_art2.case3 h3 { font-weight:500; font-size:18px; letter-spacing:-0.4px; text-align:center; color:#616161; }
+article.purpose_art2.case3 h2 { font-size:24px; letter-spacing:-1.2px; margin:100px 0 30px 0;}
+article.purpose_art2.case3 img { margin-top:25px; }
