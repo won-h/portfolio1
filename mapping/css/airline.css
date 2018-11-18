@@ -1,0 +1,172 @@
+article, aside, hgroup, header, footer, figure, figcaption, nav, section,time, mark, canvas, video, audio, details, summary, menu { display:block; }
+body, p, div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select { margin:0; padding:0; font-family: 'notokr', 'sans-serif'; text-decoration:none; }
+body, div, th, td, input, textarea, select, button, table, h1, h2, h3, h4, h5, h6, label, legend { font-family: 'notokr', 'sans-serif'; text-decoration:none; color:#1d1d1d;}
+img, fieldset, iframe { border:0 none; }
+a:hover, a:active, a:focus { text-decoration:none; }
+li, dd, ul, ol { list-style:none; }
+em, address { font-style:normal; }
+a { text-decoration:none; font-family: 'notokr', 'sans-serif'; color:#000; font-weight:400; cursor:pointer; }
+.clear { clear:both; }
+
+body { background:#f4f4f4; }
+header { width:100%; height:75px; background:#22b0ff; }
+header .wrap { width:1040px; margin:0 auto; }
+header .wrap a.blind { width:0px; height:0px; display:block; overflow:hidden;}
+header .wrap a.blind:focus { position:fixed; top:0; left:0; width:100%; text-align:center; background-color:#1fd2ff; height:40px; line-height:40px; font-size:17px; }
+header .wrap a.logo { float:left; margin-top:12px; }
+header .wrap ul { float:left; line-height:73px; }
+header .wrap ul li { float:left; margin-left:30px; }
+header .wrap ul li a { font-size:20px; color:#fff; }
+
+header .wrap ul.my_menu { float:right; }
+header .wrap ul.my_menu li a.logbox { background:url('http://www.won-h.com/portfolio/mapping/img/nav_login_white.png') no-repeat; width:32px; height:26px; text-indent:-9999px; display:inline-block; vertical-align:text-top; transition:all .2s; }
+
+/*로그인박스*/
+.blindBackground { width:100%; height:100%; position:fixed; top:0; left:0; background:rgba(0,0,0,0.6); z-index:20; display:none; }
+#log_box { width:537px; height:745px; position:fixed; top:0; left:0; right:0; bottom:0; margin:auto; background-color:#fff; border-radius:3px; z-index:21; display:none;}
+#log_box .log_box_title { width:100%; height:80px; background-color:#22b0ff; text-align:center; padding-top:15px; box-sizing:border-box; }
+#log_box .log_box_content { padding:30px 40px; box-sizing:border-box;}
+#log_box .log_box_content .log_id input,
+#log_box .log_box_content .log_password input { width:100%; height:55px; border:1px solid #ddd; margin-top:10px; padding-left:20px; box-sizing:border-box; }
+#log_box .log_box_content .log_id input::placeholder,
+#log_box .log_box_content .log_password input::placeholder { color:#444; line-height:55px;  }
+#log_box .log_idSave { margin:15px 0; }
+#log_box .log_idSave input#log_idSave { width:19px; height:19px; vertical-align:text-top; margin-top:2px; }
+#log_box .log_idSave label { padding-left:10px; font-size:12px;  }
+#log_box .log_enter {  }
+#log_box .log_enter button { width:100%; height:55px; margin-top:10px; background:#22b0ff; box-sizing:border-box; border:0; }
+#log_box .log_enter button span { color:#fff; text-align:center; font-size:17px; }
+#log_box .log_find { padding:30px 0; text-align:center; border-bottom:1px dashed #ddd; }
+#log_box .log_find p,
+#log_box .log_find a { color:#737373; font-size:12px; font-family:'돋움','dotum','sans-serif'; }
+#log_box .log_find a { text-decoration:underline; color:#22b0ff; }
+#log_box .log_another { margin-top:20px; }
+#log_box .log_another a { display:block; margin-top:10px; width:100%; height:55px; line-height:55px; color:#fff; text-align:center; font-size:17px; }
+#log_box .log_another a.naver { background-color:#00c73c; }
+#log_box .log_another a.kakao { background-color:#ffd800; color:#3a2c25; }
+#log_box .log_member { padding:30px 0; text-align:center; }
+#log_box .log_member p,
+#log_box .log_member a { color:#737373; font-size:12px; font-family:'돋움','dotum','sans-serif'; }
+#log_box .log_member a { text-decoration:underline; color:#22b0ff; }
+
+
+article { width:1040px; margin:40px auto; }
+article aside { background-color:#fff; border:1px solid #e0e0e0; /*height:800px;*/ }
+article aside#left { float:left; width:340px; padding:26px 20px; box-sizing:border-box;  }
+
+article aside#left ul:after { content:" "; display:block; clear:both; }
+article aside#left ul li { width:31%; height:27px; line-height:27px; float:left; text-align:center; cursor:pointer; }
+article aside#left ul li a { color:#9ba4ae;  }
+article aside#left ul li.on a { color:#22b0ff; }
+article aside#left ul li:before { background:url('http://www.won-h.com/portfolio/mapping/img/air_line_icon.png') no-repeat; width:23px; height:23px; vertical-align:text-top; margin-right:5px; }
+article aside#left ul li.line1:before { content:" "; display:inline-block; background-position:0px 0px; }
+article aside#left ul li.line1.on:before { content:" "; display:inline-block; background-position:0 -23px; }
+article aside#left ul li.line2:before { content:" "; display:inline-block; background-position:-23px 0px; }
+article aside#left ul li.line2.on:before { content:" "; display:inline-block; background-position:-23px -23px; }
+article aside#left ul li.line3 { width:38%; }
+article aside#left ul li.line3:before { content:" "; display:inline-block; background-position:-46px 0px; }
+article aside#left ul li.line3.on:before { content:" "; display:inline-block; background-position:-46px -23px; }
+
+article aside#left .airline_start { margin-top:24px; width:300px; height:41px; border:1px solid #ddd; border-radius:3px; box-sizing:border-box; cursor:pointer; position:relative; }
+article aside#left .airline_start:after { content:" "; display:block; clear:both; }
+article aside#left .airline_start #start_btn { font-family:'돋움','dotum','sans-serif'; font-size:12px; width:100%; height:39px; line-height:40px; box-sizing:border-box; border:0; padding-left:10px; float:left; text-align:left; background-color:#fff; cursor:pointer; }
+article aside#left .airline_start #start_btn span { font-family:'돋움','dotum','sans-serif'; font-size:12px; }
+article aside#left .airline_start #start_btn span.stext1 { display:none; }
+article aside#left .airline_start #start_btn span.stext2 { color:#a2a2a2; padding-right:10px; }
+article aside#left .airline_start #start_btn span.stext3 { color:#3b3b3b; }
+article aside#left .airline_start #start_btn span.stext3 .blue { color:#22b0ff; padding-left:6px; }
+article aside#left .airline_start #start_btn span.emo_arrow { display:inline-block; background:url('http://www.won-h.com/portfolio/mapping/img/emo_set_v2.png') no-repeat; float:right; width:39px; height:39px; background-position:-112px -6px; transition:all .2s; }
+
+article aside#left .airline_arrive { margin-top:12px; width:300px; height:41px; border:1px solid #ddd; border-radius:3px; box-sizing:border-box; cursor:pointer; position:relative; }
+article aside#left .airline_arrive:after { content:" "; display:block; clear:both; }
+article aside#left .airline_arrive #arrive_btn { font-family:'돋움','dotum','sans-serif'; font-size:12px; width:100%; height:39px; line-height:40px; box-sizing:border-box; border:0; padding-left:10px; float:left; text-align:left; background-color:#fff; cursor:pointer; }
+article aside#left .airline_arrive #arrive_btn span { font-family:'돋움','dotum','sans-serif'; font-size:12px; color:#a2a2a2; }
+article aside#left .airline_arrive #arrive_btn span.stext1 {  }
+article aside#left .airline_arrive #arrive_btn span.stext2 { padding-right:10px; display:none;}
+article aside#left .airline_arrive #arrive_btn span.stext3 { color:#3b3b3b; display:none;}
+article aside#left .airline_arrive #arrive_btn span.stext3 .blue { color:#22b0ff; padding-left:6px; }
+article aside#left .airline_arrive #arrive_btn span.emo_arrow { display:inline-block; background:url('http://www.won-h.com/portfolio/mapping/img/emo_set_v2.png') no-repeat; float:right; width:39px; height:39px; background-position:-112px -6px; transition:all .2s; }
+
+article aside#left .airline_day { margin-top:12px; width:300px; height:41px; border:1px solid #ddd; border-radius:3px; box-sizing:border-box; cursor:pointer; position:relative; }
+article aside#left .airline_day:after { content:" "; display:block; clear:both; }
+article aside#left .airline_day #day_btn { font-family:'돋움','dotum','sans-serif'; font-size:12px; width:100%; height:39px; line-height:40px; box-sizing:border-box; border:0; padding-left:10px; float:left; text-align:left; background-color:#fff; cursor:pointer; }
+article aside#left .airline_day #day_btn span { font-family:'돋움','dotum','sans-serif'; font-size:12px; color:#a2a2a2; }
+article aside#left .airline_day #day_btn span.stext1 {  }
+article aside#left .airline_day #day_btn span.stext2 { padding-right:10px; display:none;}
+article aside#left .airline_day #day_btn span.stext3 { color:#3b3b3b; display:none;}
+article aside#left .airline_day #day_btn span.stext3 .blue { color:#22b0ff; padding-left:6px; }
+article aside#left .airline_day #day_btn span.emo_arrow { display:inline-block; background:url('http://www.won-h.com/portfolio/mapping/img/emo_set_v2.png') no-repeat; float:right; width:39px; height:39px; background-position:-112px -6px; transition:all .2s; }
+
+article aside#left .airline_person { margin-top:12px; width:300px; height:41px; border:1px solid #ddd; border-radius:3px; box-sizing:border-box; cursor:pointer; position:relative; }
+article aside#left .airline_person:after { content:" "; display:block; clear:both; }
+article aside#left .airline_person #person_btn { font-family:'돋움','dotum','sans-serif'; font-size:12px; width:100%; height:39px; line-height:40px; box-sizing:border-box; border:0; padding-left:10px; float:left; text-align:left; background-color:#fff; cursor:pointer;  }
+article aside#left .airline_person #person_btn span { font-family:'돋움','dotum','sans-serif'; font-size:12px; color:#a2a2a2; }
+article aside#left .airline_person #person_btn span.stext3 { color:#3b3b3b; }
+article aside#left .airline_person #person_btn span.stext3 .blue { color:#22b0ff; padding-left:6px; }
+article aside#left .airline_person #person_btn span.emo_arrow { display:inline-block; background:url('http://www.won-h.com/portfolio/mapping/img/emo_set_v2.png') no-repeat; float:right; width:39px; height:39px; background-position:-112px -6px; transition:all .2s; }
+
+article aside#left .airline_seat { margin-top:12px; width:240px; height:41px; border:1px solid #ddd; border-radius:3px; box-sizing:border-box; cursor:pointer; position:relative; display:inline-block; }
+article aside#left .airline_seat:after { content:" "; display:block; clear:both; }
+article aside#left .airline_seat #seat_btn { font-family:'돋움','dotum','sans-serif'; font-size:12px; width:100%; height:39px; line-height:40px; box-sizing:border-box; border:0; padding-left:10px; float:left; text-align:left; background-color:#fff; cursor:pointer;  }
+article aside#left .airline_seat #seat_btn span { font-family:'돋움','dotum','sans-serif'; font-size:12px; color:#a2a2a2; }
+article aside#left .airline_seat #seat_btn span.stext3 { color:#3b3b3b; }
+article aside#left .airline_seat #seat_btn span.stext3 .blue { color:#22b0ff; padding-left:6px; }
+article aside#left .airline_seat #seat_btn span.emo_arrow { display:inline-block; background:url('http://www.won-h.com/portfolio/mapping/img/emo_set_v2.png') no-repeat; float:right; width:39px; height:39px; background-position:-112px -6px; transition:all .2s; }
+
+article aside#left .airline_seat_dt { margin-top:12px; width:50px; height:41px; line-height:41px; border-radius:3px; box-sizing:border-box; cursor:pointer; float:right; font-family:'돋움','dotum','sans-serif'; font-size:12px; color:#3b3b3b; text-align:center; border:1px solid #e0e0e0; display:inline-block; }
+article aside#left .airline_seat_dt.on { background-color:#22b0ff; color:#fff; border:0; }
+
+button#check_search { margin-top:12px; width:300px; height:62px; border:0; border-radius:3px; overflow:hidden; box-sizing:border-box; cursor:pointer; color:#fff; text-align:center; background-color:#22b0ff; font-size:20px; font-weight:400; letter-spacing:-1px; }
+
+
+
+/* content */
+article aside#right { float:right; width:690px; padding:26px 20px; box-sizing:border-box; }
+article aside#right:after { content:" "; display:block; clear:both; }
+article aside#right .review_head { width:100%; height:41px; line-height:41px; }
+article aside#right .review_head:after { content:" "; display:block; clear:both; }
+article aside#right .review_head h4 { color:#1fd2ff; font-size:22px; font-weight:500; float:left; margin-right:20px; }
+article aside#right .review_head h4:before { content:""; display:inline-block; width:35px; height:41px; background:url('http://www.won-h.com/portfolio/mapping/img/review_img.png') no-repeat; margin-right:5px; vertical-align:text-bottom; margin-bottom:-5px; }
+article aside#right .review_head .review_search { width:380px; height:41px; border:1px solid #ddd; border-radius:3px; overflow:hidden; box-sizing:border-box; border-right:0; display:inline-block; }
+article aside#right .review_head .review_search:after { content:" "; display:block; clear:both; }
+article aside#right .review_head .review_search input#review_search { font-family:'돋움','dotum','sans-serif'; font-size:12px; width:305px; height:39px; line-height:39px; box-sizing:border-box; border:0; padding-left:10px; float:left; }
+article aside#right .review_head .review_search input#review_search::placeholder { color:#a2a2a2; font-family:'돋움','dotum','sans-serif'; font-size:12px; }
+article aside#right .review_head .review_search input#review_search:active::placeholder { display:none; }
+article aside#right .review_head .review_search input#review_search:focus { outline:none; }
+article aside#right .review_head .review_search button#review_search_enter { width:73px; height:39px; background-color:#22b0ff; border:0; color:#fff; font-family:'돋움','dotum','sans-serif'; font-size:12px; float:right; cursor:pointer; }
+article aside#right .review_head .review_search button#review_search_enter span { color:#fff; text-align:center; }
+article aside#right .review_head .check { float:right; vertical-align:text-top; }
+article aside#right .review_head .check span { color:#8c8c8c; font-family:'돋움','dotum','sans-serif'; font-size:12px; cursor:pointer;}
+article aside#right .review_head .check span.first:after { content:" "; display:inline-block; width:1px; height:9px; background-color:#8c8c8c; margin:0 5px 0 8px; }
+article aside#right .review_head .check span.on { color:#22b0ff; }
+
+#loading { width:100%; margin:0 auto; height:80px; line-height:80px; margin-top:30px; text-align:center; background-color:#f3f3f3; border-radius:3px; }
+#loading:after { content:" "; display:block; clear:both; }
+#loading div {
+	width:16px; height:16px; display:inline-block; background-color:#22b0ff; border-radius:10px; margin:0 5px;
+	animation-name: loadingDivr; animation-duration: 1.6s; animation-iteration-count: infinite; animation-direction: linear;
+	-webkit-animation-name:loadingDivr; -webkit-animation-duration: 1.6s; 
+}
+#loading div.i1 { animation-delay: .3s; }
+#loading div.i2 { animation-delay: .6s; }
+#loading div.i3 { animation-delay: .9s; }
+#loading a { float:right; font-size:14px; padding:4px 6px; transition:all .2s; }
+#loading a:hover { background:#22b0ff; color:#fff; border-radius:3px;}
+#loading span { font-size:16px; display:inline-block; color:#0c9bea; }
+
+@keyframes loadingDivr {
+	0% { opacity: 0.2; }
+	25% { opacity: 0.6; }
+	50% { opacity: 1; border-radius:3px; }
+	75% { opacity: 0.6; }
+	100% { opacity: 0.2; }
+}
+
+article aside#right .reviews_content { width:100%; margin-top:40px;  }
+article aside#right .reviews_content .member_r { width:204px; height:206px; margin-right:14px; margin-bottom:10px; background:#fff; display:inline-block; border-radius:3px; box-sizing:border-box; border:1px dashed #ddd; padding:10px;}
+article aside#right .reviews_content .member_r:nth-child(3n) { margin-right:0; }
+article aside#right .reviews_content .member_r .img_wrap { width:100%; height:100px; overflow:hidden; position:relative; border-radius:3px; }
+article aside#right .reviews_content .member_r .img_wrap img { width:100%; }
+article aside#right .reviews_content .member_r .text_wrap { padding:5px 1px; box-sizing:border-box; }
+article aside#right .reviews_content .member_r .text_wrap p { font-family:'돋움','dotum','sans-serif'; font-size:12px; font-weight:bold; height:32px; line-height:32px; }
+article aside#right .reviews_content .member_r .text_wrap span { display:inline-block; display:-webkit-box; width:90%; height:30px; line-height:17px; font-family:'돋움','dotum','sans-serif'; font-size:12px; overflow:hidden; -webkit-line-clamp:2; text-overflow:ellipsis; white-space:normal; -webkit-box-orient:vertical; }

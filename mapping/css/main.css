@@ -1,0 +1,793 @@
+article, aside, hgroup, header, footer, figure, figcaption, nav, section,time, mark, canvas, video, audio, details, summary, menu { display:block; }
+/*
+html { width:100%; height:100%; overflow-y:scroll; }
+body { width:100%; height:100%; min-height:100%; background-color:white; color:#000; -webkit-text-size-adjust:none; }
+body { *word-break:break-all; -ms-word-break:break-all; word-break:break-all; }
+*/
+body, p, div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, table, th, td, form, fieldset, legend, input, textarea, button, select { margin:0; padding:0; font-family: 'notokr', 'sans-serif'; text-decoration:none; }
+body, div, th, td, input, textarea, select, button, table, h1, h2, h3, h4, h5, h6, label, legend { font-family: 'notokr', 'sans-serif'; text-decoration:none; color:#1d1d1d;}
+img, fieldset, iframe { border:0 none; }
+a:hover, a:active, a:focus { text-decoration:none; }
+li, dd, ul, ol { list-style:none; }
+em, address { font-style:normal; }
+a { text-decoration:none; font-family: 'notokr', 'sans-serif'; color:#000; font-weight:400; cursor:pointer; }
+.clear { clear:both; }
+
+body { background-color:#e9eff6; }
+header { width:100%; background-color:#fff; border-bottom:1px solid #ececec; box-sizing:border-box;}
+header nav { width:1040px; height:64px; line-height:64px; margin:0 auto; }
+header nav:after { content:" "; display:block; clear:both; }
+header nav ul { float:left; }
+header nav ul:after { content:" "; display:block; clear:both; }
+header nav ul a.blind { width:0px; height:0px; display:block; overflow:hidden;}
+header nav ul a.blind:focus { position:fixed; top:0; left:0; width:100%; text-align:center; background-color:#1fd2ff; height:40px; line-height:40px; font-size:17px; }
+header nav ul.nav_right { float:right; }
+header nav ul.nav_right li { float:left; }
+header nav ul.nav_right li a.logbox { background:url('http://www.won-h.com/portfolio/mapping/img/nav_login.png') no-repeat; width:32px; height:26px; text-indent:-9999px; display:inline-block; vertical-align:text-top; transition:all .2s; }
+header nav ul.nav_right li a.logbox:hover,
+header nav ul.nav_right li a.logbox:active { background:url('http://www.won-h.com/portfolio/mapping/img/nav_login_blue.png') no-repeat; }
+header nav ul li { float:left; margin-left:30px;}
+header nav ul li:first-child { margin-left:0; }
+header nav ul li a { font-size:21px; font-weight:400; letter-spacing:-1px;}
+header div.headLine { width:1040px; margin:0 auto; text-align:center; margin-top:40px; }
+header div.headLine img {  }
+header div.headLine h1 { font-size:62px; font-weight:bold; letter-spacing:-1px;}
+header div.headLine h3 { font-size:21px; font-weight:400; letter-spacing:-0.5px; padding:40px 0 60px; }
+
+article { width:100%; height:626px; background:url('http://www.won-h.com/portfolio/mapping/img/Italy.png') no-repeat; background-position:50% -170px; position:relative; }
+article .airline { width:340px; height:447px; background-color:#fff; position:absolute; left:-380px; right:0; bottom:0; margin:auto; padding:26px 20px; box-sizing:border-box; }
+article .airline ul:after { content:" "; display:block; clear:both; }
+article .airline ul li { width:31%; height:27px; line-height:27px; float:left; text-align:center; cursor:pointer; }
+article .airline ul li a { color:#9ba4ae;  }
+article .airline ul li.on a { color:#22b0ff; }
+article .airline ul li:before { background:url('http://www.won-h.com/portfolio/mapping/img/air_line_icon.png') no-repeat; width:23px; height:23px; vertical-align:text-top; margin-right:5px; }
+article .airline ul li.line1:before { content:" "; display:inline-block; background-position:0px 0px; }
+article .airline ul li.line1.on:before { content:" "; display:inline-block; background-position:0 -23px; }
+article .airline ul li.line2:before { content:" "; display:inline-block; background-position:-23px 0px; }
+article .airline ul li.line2.on:before { content:" "; display:inline-block; background-position:-23px -23px; }
+article .airline ul li.line3 { width:38%; }
+article .airline ul li.line3:before { content:" "; display:inline-block; background-position:-46px 0px; }
+article .airline ul li.line3.on:before { content:" "; display:inline-block; background-position:-46px -23px; }
+
+
+article .airline .airline_start { margin-top:24px; width:300px; height:41px; border:1px solid #ddd; border-radius:3px; box-sizing:border-box; cursor:pointer; position:relative; }
+article .airline .airline_start:after { content:" "; display:block; clear:both; }
+article .airline .airline_start #start_btn { font-family:'돋움','dotum','sans-serif'; font-size:12px; width:100%; height:39px; line-height:40px; box-sizing:border-box; border:0; padding-left:10px; float:left; text-align:left; background-color:#fff; cursor:pointer; }
+article .airline .airline_start #start_btn span { font-family:'돋움','dotum','sans-serif'; font-size:12px; }
+article .airline .airline_start #start_btn span.stext1 { display:none; }
+article .airline .airline_start #start_btn span.stext2 { color:#a2a2a2; padding-right:10px; }
+article .airline .airline_start #start_btn span.stext3 { color:#3b3b3b; }
+article .airline .airline_start #start_btn span.stext3 .blue { color:#22b0ff; padding-left:6px; }
+article .airline .airline_start #start_btn span.emo_arrow { display:inline-block; background:url('http://www.won-h.com/portfolio/mapping/img/emo_set_v2.png') no-repeat; float:right; width:39px; height:39px; background-position:-112px -6px; transition:all .2s; }
+
+
+article .airline .airline_arrive { margin-top:12px; width:300px; height:41px; border:1px solid #ddd; border-radius:3px; box-sizing:border-box; cursor:pointer; position:relative; }
+article .airline .airline_arrive:after { content:" "; display:block; clear:both; }
+article .airline .airline_arrive #arrive_btn { font-family:'돋움','dotum','sans-serif'; font-size:12px; width:100%; height:39px; line-height:40px; box-sizing:border-box; border:0; padding-left:10px; float:left; text-align:left; background-color:#fff; cursor:pointer; }
+article .airline .airline_arrive #arrive_btn span { font-family:'돋움','dotum','sans-serif'; font-size:12px; color:#a2a2a2; }
+article .airline .airline_arrive #arrive_btn span.stext1 {  }
+article .airline .airline_arrive #arrive_btn span.stext2 { padding-right:10px; display:none;}
+article .airline .airline_arrive #arrive_btn span.stext3 { color:#3b3b3b; display:none;}
+article .airline .airline_arrive #arrive_btn span.stext3 .blue { color:#22b0ff; padding-left:6px; }
+article .airline .airline_arrive #arrive_btn span.emo_arrow { display:inline-block; background:url('http://www.won-h.com/portfolio/mapping/img/emo_set_v2.png') no-repeat; float:right; width:39px; height:39px; background-position:-112px -6px; transition:all .2s; }
+
+
+article .airline .airline_day { margin-top:12px; width:300px; height:41px; border:1px solid #ddd; border-radius:3px; box-sizing:border-box; cursor:pointer; position:relative; }
+article .airline .airline_day:after { content:" "; display:block; clear:both; }
+article .airline .airline_day #day_btn { font-family:'돋움','dotum','sans-serif'; font-size:12px; width:100%; height:39px; line-height:40px; box-sizing:border-box; border:0; padding-left:10px; float:left; text-align:left; background-color:#fff; cursor:pointer; }
+article .airline .airline_day #day_btn span { font-family:'돋움','dotum','sans-serif'; font-size:12px; color:#a2a2a2; }
+article .airline .airline_day #day_btn span.stext1 {  }
+article .airline .airline_day #day_btn span.stext2 { padding-right:10px; display:none;}
+article .airline .airline_day #day_btn span.stext3 { color:#3b3b3b; display:none;}
+article .airline .airline_day #day_btn span.stext3 .blue { color:#22b0ff; padding-left:6px; }
+article .airline .airline_day #day_btn span.emo_arrow { display:inline-block; background:url('http://www.won-h.com/portfolio/mapping/img/emo_set_v2.png') no-repeat; float:right; width:39px; height:39px; background-position:-112px -6px; transition:all .2s; }
+
+
+article .airline .airline_person { margin-top:12px; width:300px; height:41px; border:1px solid #ddd; border-radius:3px; box-sizing:border-box; cursor:pointer; position:relative; }
+article .airline .airline_person:after { content:" "; display:block; clear:both; }
+article .airline .airline_person #person_btn { font-family:'돋움','dotum','sans-serif'; font-size:12px; width:100%; height:39px; line-height:40px; box-sizing:border-box; border:0; padding-left:10px; float:left; text-align:left; background-color:#fff; cursor:pointer;  }
+article .airline .airline_person #person_btn span { font-family:'돋움','dotum','sans-serif'; font-size:12px; color:#a2a2a2; }
+article .airline .airline_person #person_btn span.stext3 { color:#3b3b3b; }
+article .airline .airline_person #person_btn span.stext3 .blue { color:#22b0ff; padding-left:6px; }
+article .airline .airline_person #person_btn span.emo_arrow { display:inline-block; background:url('http://www.won-h.com/portfolio/mapping/img/emo_set_v2.png') no-repeat; float:right; width:39px; height:39px; background-position:-112px -6px; transition:all .2s; }
+
+
+article .airline .airline_seat { margin-top:12px; width:240px; height:41px; border:1px solid #ddd; border-radius:3px; box-sizing:border-box; cursor:pointer; position:relative; display:inline-block; }
+article .airline .airline_seat:after { content:" "; display:block; clear:both; }
+article .airline .airline_seat #seat_btn { font-family:'돋움','dotum','sans-serif'; font-size:12px; width:100%; height:39px; line-height:40px; box-sizing:border-box; border:0; padding-left:10px; float:left; text-align:left; background-color:#fff; cursor:pointer;  }
+article .airline .airline_seat #seat_btn span { font-family:'돋움','dotum','sans-serif'; font-size:12px; color:#a2a2a2; }
+article .airline .airline_seat #seat_btn span.stext3 { color:#3b3b3b; }
+article .airline .airline_seat #seat_btn span.stext3 .blue { color:#22b0ff; padding-left:6px; }
+article .airline .airline_seat #seat_btn span.emo_arrow { display:inline-block; background:url('http://www.won-h.com/portfolio/mapping/img/emo_set_v2.png') no-repeat; float:right; width:39px; height:39px; background-position:-112px -6px; transition:all .2s; }
+
+article .airline a.airline_seat_dt { margin-top:12px; width:50px; height:41px; line-height:41px; border-radius:3px; box-sizing:border-box; cursor:pointer; float:right; font-family:'돋움','dotum','sans-serif'; font-size:12px; color:#3b3b3b; text-align:center; border:1px solid #e0e0e0; display:inline-block; }
+article .airline a.airline_seat_dt.on { background-color:#22b0ff; color:#fff; border:0; }
+
+button#check_search { margin-top:12px; width:300px; height:62px; border:0; border-radius:3px; overflow:hidden; box-sizing:border-box; cursor:pointer; color:#fff; text-align:center; background-color:#22b0ff; font-size:20px; font-weight:400; letter-spacing:-1px; }
+
+/*hotel*/
+article .hotel { width:340px; height:447px; background-color:#fff; position:absolute; left:0; right:-380px; bottom:0; margin:auto; padding:26px 20px; box-sizing:border-box;}
+article .hotel ul { width:300px; height:27px; line-height:27px; display:block; }
+article .hotel ul:after { clear:both; content:" "; display:block; }
+article .hotel ul li { width:25%; float:left; }
+article .hotel ul li.num3 { width:21%; }
+article .hotel ul li input { vertical-align:text-top; margin-top:6px; margin-right:5px; }
+article .hotel ul li label { color:#6955d2; font-family:'돋움','dotum','sans-serif'; font-size:12px; font-weight:bold; }
+
+article .hotel .hotel_city { margin-top:24px; width:300px; height:41px; border:1px solid #ddd; border-radius:3px; box-sizing:border-box; cursor:pointer; position:relative; }
+article .hotel .hotel_city:after { content:" "; display:block; clear:both; }
+article .hotel .hotel_city #city_btn { font-family:'돋움','dotum','sans-serif'; font-size:12px; width:100%; height:39px; line-height:40px; box-sizing:border-box; border:0; padding-left:10px; float:left; text-align:left; background-color:#fff; cursor:pointer; outline-color:#6955d2; }
+article .hotel .hotel_city #city_btn span { font-family:'돋움','dotum','sans-serif'; font-size:12px; color:#a2a2a2; }
+article .hotel .hotel_city #city_btn span.stext1 {  }
+article .hotel .hotel_city #city_btn span.stext2 { color:#a2a2a2; padding-right:10px; display:none; }
+article .hotel .hotel_city #city_btn span.stext3 { color:#3b3b3b; display:none;}
+article .hotel .hotel_city #city_btn span.stext3 .purple { color:#6955d2; padding-left:6px; }
+article .hotel .hotel_city #city_btn span.emo_arrow { display:inline-block; background:url('http://www.won-h.com/portfolio/mapping/img/emo_set_v2.png') no-repeat; float:right; width:39px; height:39px; background-position:-162px -6px; transition:all .2s; }
+
+article .hotel .hotel_checkin { margin-top:12px; width:300px; height:41px; border:1px solid #ddd; border-radius:3px; box-sizing:border-box; cursor:pointer; position:relative; }
+article .hotel .hotel_checkin:after { content:" "; display:block; clear:both; }
+article .hotel .hotel_checkin #checkin_btn { font-family:'돋움','dotum','sans-serif'; font-size:12px; width:100%; height:39px; line-height:40px; box-sizing:border-box; border:0; padding-left:10px; float:left; text-align:left; background-color:#fff; cursor:pointer; outline-color:#6955d2; }
+article .hotel .hotel_checkin #checkin_btn span { font-family:'돋움','dotum','sans-serif'; font-size:12px; color:#a2a2a2; }
+article .hotel .hotel_checkin #checkin_btn span.stext1 {  }
+article .hotel .hotel_checkin #checkin_btn span.stext2 { color:#a2a2a2; padding-right:10px; display:none; }
+article .hotel .hotel_checkin #checkin_btn span.stext3 { color:#3b3b3b; display:none;}
+article .hotel .hotel_checkin #checkin_btn span.stext3 .purple { color:#6955d2; padding-left:6px; }
+article .hotel .hotel_checkin #checkin_btn span.emo_arrow { display:inline-block; background:url('http://www.won-h.com/portfolio/mapping/img/emo_set_v2.png') no-repeat; float:right; width:39px; height:39px; background-position:-162px -6px; transition:all .2s; }
+
+article .hotel .hotel_checkout { margin-top:12px; width:300px; height:41px; border:1px solid #ddd; border-radius:3px; box-sizing:border-box; cursor:pointer; position:relative; }
+article .hotel .hotel_checkout:after { content:" "; display:block; clear:both; }
+article .hotel .hotel_checkout #checkout_btn { font-family:'돋움','dotum','sans-serif'; font-size:12px; width:100%; height:39px; line-height:40px; box-sizing:border-box; border:0; padding-left:10px; float:left; text-align:left; background-color:#fff; cursor:pointer; outline-color:#6955d2; }
+article .hotel .hotel_checkout #checkout_btn span { font-family:'돋움','dotum','sans-serif'; font-size:12px; color:#a2a2a2; }
+article .hotel .hotel_checkout #checkout_btn span.stext1 {  }
+article .hotel .hotel_checkout #checkout_btn span.stext2 { color:#a2a2a2; padding-right:10px; display:none; }
+article .hotel .hotel_checkout #checkout_btn span.stext3 { color:#3b3b3b; display:none;}
+article .hotel .hotel_checkout #checkout_btn span.stext3 .purple { color:#6955d2; padding-left:6px; }
+article .hotel .hotel_checkout #checkout_btn span.emo_arrow { display:inline-block; background:url('http://www.won-h.com/portfolio/mapping/img/emo_set_v2.png') no-repeat; float:right; width:39px; height:39px; background-position:-162px -6px; transition:all .2s; }
+
+article .hotel .hotel_person { margin-top:12px; width:300px; height:41px; border:1px solid #ddd; border-radius:3px; box-sizing:border-box; cursor:pointer; position:relative; }
+article .hotel .hotel_person:after { content:" "; display:block; clear:both; }
+article .hotel .hotel_person #hotel_person_btn { font-family:'돋움','dotum','sans-serif'; font-size:12px; width:100%; height:39px; line-height:40px; box-sizing:border-box; border:0; padding-left:10px; float:left; text-align:left; background-color:#fff; cursor:pointer; outline-color:#6955d2; }
+article .hotel .hotel_person #hotel_person_btn span { font-family:'돋움','dotum','sans-serif'; font-size:12px; color:#a2a2a2; }
+article .hotel .hotel_person #hotel_person_btn span.stext3 { color:#3b3b3b;}
+article .hotel .hotel_person #hotel_person_btn span.stext3 .purple { color:#6955d2; padding-left:6px; }
+article .hotel .hotel_person #hotel_person_btn span.emo_arrow { display:inline-block; background:url('http://www.won-h.com/portfolio/mapping/img/emo_set_v2.png') no-repeat; float:right; width:39px; height:39px; background-position:-162px -6px; transition:all .2s; }
+
+button#hotel_check_search { margin-top:12px; width:300px; height:62px; border:0; border-radius:3px; overflow:hidden; box-sizing:border-box; cursor:pointer; color:#fff; text-align:center; background-color:#6955d2; font-size:20px; font-weight:400; letter-spacing:-1px; }
+
+/* aside airline*/
+aside#travel_review { width:1040px; margin:0 auto; /*height:1000px;*/ margin-top:40px; padding-bottom:30px; border-bottom:3px solid #22b0ff; }
+aside#travel_review:after { content:" "; display:block; clear:both; }
+aside#travel_review .reviews { width:390px; border:1px dashed #e0e0e0; padding:35px 40px; box-sizing:border-box; display:inline-block; height:500px; background:#fff; }
+aside#travel_review .reviews:after { content:" "; display:block; clear:both; }
+aside#travel_review .reviews .review_head:after { content:" "; display:block; clear:both; }
+aside#travel_review .reviews .review_head h4 { color:#1fd2ff; font-size:22px; display:inline-block; font-weight:500; }
+aside#travel_review .reviews .review_head h4:before { content:""; display:inline-block; width:35px; height:41px; background:url('http://www.won-h.com/portfolio/mapping/img/review_img.png') no-repeat; margin-right:5px; vertical-align:text-bottom; margin-bottom:-5px; }
+aside#travel_review .reviews .review_head div.check { float:right; vertical-align:text-top; margin-top:10px; }
+aside#travel_review .reviews .review_head span { color:#8c8c8c; font-family:'돋움','dotum','sans-serif'; font-size:12px; cursor:pointer;}
+aside#travel_review .reviews .review_head span.first:after { content:" "; display:inline-block; width:1px; height:9px; background-color:#8c8c8c; margin:0 5px 0 8px; }
+aside#travel_review .reviews .review_head span.on { color:#22b0ff; }
+aside#travel_review .reviews .review_search { margin-top:16px; width:308px; height:41px; border:1px solid #ddd; border-radius:3px; overflow:hidden; box-sizing:border-box; border-right:0; }
+aside#travel_review .reviews .review_search:after { content:" "; display:block; clear:both; }
+aside#travel_review .reviews .review_search input#review_search { font-family:'돋움','dotum','sans-serif'; font-size:12px; width:230px; height:39px; line-height:39px; box-sizing:border-box; border:0; padding-left:10px; float:left; }
+aside#travel_review .reviews .review_search input#review_search::placeholder { color:#a2a2a2; font-family:'돋움','dotum','sans-serif'; font-size:12px; }
+aside#travel_review .reviews .review_search input#review_search:active::placeholder { display:none; }
+aside#travel_review .reviews .review_search input#review_search:focus { outline:none; }
+aside#travel_review .reviews .review_search button#review_search_enter { width:73px; height:39px; background-color:#22b0ff; border:0; color:#fff; font-family:'돋움','dotum','sans-serif'; font-size:12px; float:right; cursor:pointer; }
+aside#travel_review .reviews .review_search button#review_search_enter span { color:#fff; text-align:center; }
+aside#travel_review .reviews a.banner { display:inline-block; margin-top:23px; }
+
+aside#travel_review .reviews_content { width:640px; height:500px; display:inline-block; float:right; }
+aside#travel_review .reviews_content .member_r { width:204px; height:206px; margin-right:10px; margin-bottom:10px; background:#fff; display:inline-block; border-radius:3px; box-sizing:border-box; border:1px dashed #ddd; padding:10px;}
+aside#travel_review .reviews_content .member_r:nth-child(3n) { margin-right:0; }
+aside#travel_review .reviews_content .member_r .img_wrap { width:100%; height:100px; overflow:hidden; position:relative; border-radius:3px; }
+aside#travel_review .reviews_content .member_r .img_wrap img { width:100%; }
+aside#travel_review .reviews_content .member_r .text_wrap { padding:5px 1px; box-sizing:border-box; }
+aside#travel_review .reviews_content .member_r .text_wrap p { font-family:'돋움','dotum','sans-serif'; font-size:12px; font-weight:bold; height:32px; line-height:32px; }
+aside#travel_review .reviews_content .member_r .text_wrap span { display:inline-block; display:-webkit-box; width:90%; height:30px; line-height:17px; font-family:'돋움','dotum','sans-serif'; font-size:12px; overflow:hidden; -webkit-line-clamp:2; text-overflow:ellipsis; white-space:normal; -webkit-box-orient:vertical; }
+
+#loading { width:100%; margin:0 auto; /*height:100px;*/ margin-top:20px; text-align:center; }
+#loading:after { content:" "; display:block; clear:both; }
+#loading div {
+	width:16px; height:16px; display:inline-block; background-color:#22b0ff; border-radius:10px; margin:0 5px;
+	animation-name: loadingDiv; animation-duration: 1.6s; animation-iteration-count: infinite; animation-direction: linear;
+	-webkit-animation-name:loadingDiv; -webkit-animation-duration: 1.6s; 
+}
+#loading div.i1 { animation-delay: .3s; }
+#loading div.i2 { animation-delay: .6s; }
+#loading div.i3 { animation-delay: .9s; }
+#loading a { float:right; font-size:14px; padding:4px 6px; transition:all .2s; }
+#loading a:hover { background:#22b0ff; color:#fff; border-radius:3px;}
+#loading span { font-size:16px; display:inline-block; vertical-align:text-top; margin-top:-2px; color:#0c9bea; }
+
+@keyframes loadingDiv {
+	0% { opacity: 0.2; }
+	25% { opacity: 0.6; }
+	50% { opacity: 1; border-radius:3px; }
+	75% { opacity: 0.6; }
+	100% { opacity: 0.2; }
+}
+
+/* aside hotel*/
+aside#hotel_review { width:1040px; margin:0 auto; /*height:1000px;*/ margin-top:40px; padding-bottom:40px; padding-bottom:30px; border-bottom:3px solid #6955d2;}
+aside#hotel_review:after { content:" "; display:block; clear:both; }
+aside#hotel_review .reviews { width:390px; border:1px dashed #e0e0e0; padding:35px 40px; box-sizing:border-box; display:inline-block; height:500px; background:#fff; }
+aside#hotel_review .reviews:after { content:" "; display:block; clear:both; }
+aside#hotel_review .reviews .review_head:after { content:" "; display:block; clear:both; }
+aside#hotel_review .reviews .review_head h4 { color:#6955d2; font-size:22px; display:inline-block; font-weight:500; }
+aside#hotel_review .reviews .review_head h4:before { content:""; display:inline-block; width:35px; height:41px; background:url('http://www.won-h.com/portfolio/mapping/img/hotel_review_img.png') no-repeat; margin-right:5px; vertical-align:text-bottom; margin-bottom:-5px; }
+aside#hotel_review .reviews .review_head div.check { float:right; vertical-align:text-top; margin-top:10px; }
+aside#hotel_review .reviews .review_head span { color:#8c8c8c; font-family:'돋움','dotum','sans-serif'; font-size:12px; cursor:pointer;}
+aside#hotel_review .reviews .review_head span.first:after { content:" "; display:inline-block; width:1px; height:9px; background-color:#8c8c8c; margin:0 5px 0 8px; }
+aside#hotel_review .reviews .review_head span.on { color:#6955d2; }
+aside#hotel_review .reviews .hotel_review_search { margin-top:16px; width:308px; height:41px; border:1px solid #ddd; border-radius:3px; overflow:hidden; box-sizing:border-box; border-right:0; }
+aside#hotel_review .reviews .hotel_review_search:after { content:" "; display:block; clear:both; }
+aside#hotel_review .reviews .hotel_review_search input#hotel_review_search { font-family:'돋움','dotum','sans-serif'; font-size:12px; width:230px; height:39px; line-height:39px; box-sizing:border-box; border:0; padding-left:10px; float:left; }
+aside#hotel_review .reviews .hotel_review_search input#hotel_review_search::placeholder { color:#a2a2a2; font-family:'돋움','dotum','sans-serif'; font-size:12px; }
+aside#hotel_review .reviews .hotel_review_search input#hotel_review_search:active::placeholder { display:none; }
+aside#hotel_review .reviews .hotel_review_search input#hotel_review_search:focus { outline:none; }
+aside#hotel_review .reviews .hotel_review_search button#hotel_review_search_enter { width:73px; height:39px; background-color:#6955d2; border:0; color:#fff; font-family:'돋움','dotum','sans-serif'; font-size:12px; float:right; cursor:pointer; }
+aside#hotel_review .reviews .hotel_review_search button#hotel_review_search_enter span { color:#fff; text-align:center; }
+aside#hotel_review .reviews a.banner { display:inline-block; margin-top:23px; }
+
+aside#hotel_review .reviews_content { width:640px; height:500px; display:inline-block; float:right; border-bottom:1px solid #e6e6e6; box-sizing:border-box;}
+aside#hotel_review .reviews_content .member_r { width:204px; height:206px; margin-right:10px; margin-bottom:10px; background:#fff; display:inline-block; border-radius:3px; box-sizing:border-box; border:1px dashed #ddd; padding:10px;}
+aside#hotel_review .reviews_content .member_r:nth-child(3n) { margin-right:0; }
+aside#hotel_review .reviews_content .member_r .img_wrap { width:100%; height:100px; overflow:hidden; position:relative; border-radius:3px; }
+aside#hotel_review .reviews_content .member_r .img_wrap img { width:100%; }
+aside#hotel_review .reviews_content .member_r .text_wrap { padding:5px 1px; box-sizing:border-box; }
+aside#hotel_review .reviews_content .member_r .text_wrap p { font-family:'돋움','dotum','sans-serif'; font-size:12px; font-weight:bold; height:32px; line-height:32px; }
+aside#hotel_review .reviews_content .member_r .text_wrap span { display:inline-block; display:-webkit-box; width:90%; height:30px; line-height:17px; font-family:'돋움','dotum','sans-serif'; font-size:12px; overflow:hidden; -webkit-line-clamp:2; text-overflow:ellipsis; white-space:normal; -webkit-box-orient:vertical; }
+
+#loading2 { width:100%; margin:0 auto; /*height:100px;*/ margin-top:20px; text-align:center; }
+#loading2:after { content:" "; display:block; clear:both; }
+#loading2 div {
+	width:16px; height:16px; display:inline-block; background-color:#6955d2; border-radius:10px; margin:0 5px;
+	animation-name: loadingDiv2; animation-duration: 1.6s; animation-iteration-count: infinite; animation-direction: linear;
+	-webkit-animation-name:loadingDiv2; -webkit-animation-duration: 1.6s; 
+}
+#loading2 div.i1 { animation-delay: .3s; }
+#loading2 div.i2 { animation-delay: .6s; }
+#loading2 div.i3 { animation-delay: .9s; }
+#loading2 a { float:right; font-size:14px; padding:4px 6px; transition:all .2s; }
+#loading2 a:hover { background:#6955d2; color:#fff; border-radius:3px;}
+#loading2 span { font-size:16px; display:inline-block; vertical-align:text-top; margin-top:-2px; color:#6955d2; }
+
+@keyframes loadingDiv2 {
+	0% { opacity: 0.2; }
+	25% { opacity: 0.6; }
+	50% { opacity: 1; border-radius:3px; }
+	75% { opacity: 0.6; }
+	100% { opacity: 0.2; }
+}
+
+/*footer*/
+footer { width:1040px; margin:0 auto; margin-top:100px; text-align:center; padding-top:40px; border-top:1px dashed #b3b6bb; }
+footer button.top_arrow { background:url('http://www.won-h.com/portfolio/ev_car/img/top_arrow.png') no-repeat; position:fixed; bottom:4%; right:4%; border:0; width:90px; height:90px; transform:translate(0,50px); opacity:0; transition-duration:0.6s; transition-delay:0.1s; cursor:pointer;}
+footer button.top_arrow.ts { transform:translate(0,0); opacity:1; transition-duration:0.6s; transition-delay:0.1s; }
+ul.info { text-align:center; display:inline-block; }
+ul.info:after { content:" "; display:block; clear:both; }
+ul.info li { float:left; }
+ul.info li:after { content:" "; display:inline-block; width:1px; height:9px; background:#909090; margin:0 8px; }
+ul.info li:last-child:after { display:none; }
+ul.info li a { font-family:'돋움','dotum','sans-serif'; font-size:12px; font-weight:normal; color:#424242; }
+
+.friend_logo { text-align:center; margin:20px auto; }
+.friend_logo img {  }
+
+.advise { text-align:center; margin:20px auto; }
+.advise p { color:#8b8b8b; line-height: 20px; font-family:'돋움','dotum','sans-serif'; font-size:12px; font-weight:normal;}
+
+.info2 { text-align:center; margin:20px auto; padding-bottom:50px; }
+.info2 ul { display:inline-block; text-align:center; }
+.info2 ul:after { content:" "; display:block; clear:both; }
+.info2 ul li { float:left; font-family:'돋움','dotum','sans-serif'; font-size:12px; font-weight:normal; }
+.info2 ul li:after { content:" "; display:inline-block; width:1px; height:9px; background:#909090; margin:0 6px; }
+.info2 ul li:last-child:after { display:none; }
+.info2 p { font-family:'돋움','dotum','sans-serif'; font-size:12px; font-weight:bold; color:#505e73; padding-top:15px; }
+
+.blindBackground { width:100%; height:100%; position:fixed; top:0; left:0; background:rgba(0,0,0,0.6); z-index:20; display:none; }
+#log_box { width:537px; height:745px; position:fixed; top:0; left:0; right:0; bottom:0; margin:auto; background-color:#fff; border-radius:3px; z-index:21; display:none;}
+#log_box .log_box_title { width:100%; height:80px; background-color:#22b0ff; text-align:center; padding-top:15px; box-sizing:border-box; }
+#log_box .log_box_content { padding:30px 40px; box-sizing:border-box;}
+#log_box .log_box_content .log_id input,
+#log_box .log_box_content .log_password input { width:100%; height:55px; border:1px solid #ddd; margin-top:10px; padding-left:20px; box-sizing:border-box; }
+#log_box .log_box_content .log_id input::placeholder,
+#log_box .log_box_content .log_password input::placeholder { color:#444; line-height:55px;  }
+#log_box .log_idSave { margin:15px 0; }
+#log_box .log_idSave input#log_idSave { width:19px; height:19px; vertical-align:text-top; margin-top:2px; }
+#log_box .log_idSave label { padding-left:10px; font-size:12px;  }
+#log_box .log_enter {  }
+#log_box .log_enter button { width:100%; height:55px; margin-top:10px; background:#22b0ff; box-sizing:border-box; border:0; }
+#log_box .log_enter button span { color:#fff; text-align:center; font-size:17px; }
+#log_box .log_find { padding:30px 0; text-align:center; border-bottom:1px dashed #ddd; }
+#log_box .log_find p,
+#log_box .log_find a { color:#737373; font-size:12px; font-family:'돋움','dotum','sans-serif'; }
+#log_box .log_find a { text-decoration:underline; color:#22b0ff; }
+#log_box .log_another { margin-top:20px; }
+#log_box .log_another a { display:block; margin-top:10px; width:100%; height:55px; line-height:55px; color:#fff; text-align:center; font-size:17px; }
+#log_box .log_another a.naver { background-color:#00c73c; }
+#log_box .log_another a.kakao { background-color:#ffd800; color:#3a2c25; }
+#log_box .log_member { padding:30px 0; text-align:center; }
+#log_box .log_member p,
+#log_box .log_member a { color:#737373; font-size:12px; font-family:'돋움','dotum','sans-serif'; }
+#log_box .log_member a { text-decoration:underline; color:#22b0ff; }
+
+#choice_box { width:500px; height:600px; position:fixed; top:0; left:0; right:0; bottom:0; margin:auto; background-color:#fff; border-radius:3px; z-index:21; display:none; overflow:hidden; }
+
+.ch_title { width:100%; height:50px; line-height:50px; background:#22b0ff; box-sizing:border-box; padding:0 24px; color:#fff; }
+.ch_table { width:100%; padding:0 24px; box-sizing:border-box; margin:20px 0; }
+.ch_table p.tablep { font-weight:500; font-size:14px; letter-spacing:-0.4px; margin-bottom:20px; }
+.ch_table table { width:100%; border-top:1px solid #dcdada; border-bottom:1px solid #dcdada; }
+.ch_table table tr {}
+.ch_table table th,
+.ch_table table td { height:30px; background:#efefef; font-size:12px; font-family:'돋움','dotum','sans-serif'; cursor:pointer; }
+.ch_table table td { background:#fff; color:#696969; padding-left:24px; }
+
+.ch_table .person_box { margin-bottom:30px; width:100%; height:100px; position:relative; box-sizing:border-box; padding:5% 10%; }
+.ch_table .person_box:after { content:" "; display:block; clear:both; }
+.ch_table .person_box.adult { margin-top:50px; }
+.ch_table .person_box li { width:40%; display:inline-block; float:left; }
+.ch_table .person_box li ol { font-size:18px; color:#323232; text-align:left; }
+.ch_table .person_box li ol:last-child { font-size:15px; color:#a9a9a9; }
+.ch_table .person_box.baby li ol span { display:block; font-size:13px; color:#7b71d2; }
+.ch_table .person_box form { float:right; width:60%; display:inline-block; text-align:center; }
+.ch_table .person_box button { position:relative; width:40px; height:40px; vertical-align:text-top; margin-top:-8px; background:#22b0ff; border:1px solid #22b0ff; border-radius:5px; cursor:pointer; }
+.ch_table .person_box button span { position:absolute; top:0; left:0; right:0; bottom:0; margin:auto; width:16px; height:2px; background:#fff; }
+.ch_table .person_box button.plus_person span.plus_line2 { width:2px; height:16px; }
+.ch_table .person_box div.person_num { height:40px; line-height:40px; text-align:center; width:80px; box-sizing:border-box; display:inline-block; }
+
+.ch_table .seat_box { margin:0 auto; margin-top:60px; }
+.ch_table .seat_box p { width:80%; height:60px; line-height:60px; margin:0 auto; text-align:center; cursor:pointer; border:1px solid #ddd; border-radius:6px; font-weight:500; margin-bottom:30px; }
+.ch_table .seat_box p:last-child { margin-bottom:0; }
+.ch_table .seat_box p:hover { background:#82d2ff; border:1px solid #82d2ff; color:#fff; }
+.ch_table .seat_box p.on { background:#22b0ff; border:1px solid #22b0ff; color:#fff; }
+
+
+/*캘린더 S*/
+.calendar{
+  color: #3c3c3c;
+  margin: 10px auto;
+  background: #fff;
+  /*padding: 60px 40px 80px 40px;*/
+  width: 100%;
+  max-width: 600px;
+  height: 500px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 6px rgba(2,2,2,0.2);
+  position: relative;
+}
+.calendar__title{
+  text-align: center;
+}
+.calendar--day-view{
+  position: absolute;
+  border-radius: 3px;
+  top: -2.5%;
+  left: -2.5%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255,255,255,1);
+ box-shadow: 3px 12px 5px rgba(2,2,2,0.16);
+  z-index: 2;
+  overflow: hidden;
+  transform: scale(0.9) translate(30px,30px);
+  opacity: 0;
+  visibility: hidden;
+/*   border-radius: 5px; */
+  display: none;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.day-view-content{
+  color: #222;
+  width: 100%;
+  padding-top: 55px;
+}
+.day-highlight, .day-add-event{
+  padding: 8px 10px;
+  margin: 12px 15px;
+  border-radius: 4px;
+  background: #e7e8e8;
+  color: #222;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Avenir", sans-serif;
+}
+.row{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.row .qtr{
+  width: 40%;
+}
+.row .half{
+  width: 100%;
+}
+@media (min-width: 800px){
+  .row{
+    flex-wrap: nowrap;
+  }
+  .row .half{
+    width: 35%;
+  }
+  .row .qtr{
+    width: 25%;
+  }
+}
+
+.day-add-event{
+  background: #04b6e2;
+  color: #fff;
+  padding: 16px;
+  display: none;
+  transform: translateY(-15px);
+  opacity: 0;
+}
+.day-add-event[data-active="true"]{
+  display: block;
+  animation: popIn 250ms 1 forwards;
+}
+.add-event-label{
+  padding: 10px 0;
+  font-size: 18px;
+  font-family: 'Avenir', sans-serif;
+  color: #fff;
+  font-weight: 400;
+  font-size: 12px;
+  color: rgba(255,255,255,0.8);
+}
+.add-event-edit{
+  display: block;
+  margin: 4px 0;
+  max-width: 70%;
+  border-bottom: 2px solid #fff;
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+}
+.add-event-edit--long{
+  max-width: 90%;
+}
+
+input.add-event-edit{
+  border: none;
+  border-bottom: 2px solid #fff;
+  background: transparent;
+  outline: none;
+  font: inherit;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+}
+.add-event-edit--error, input.add-event-edit--error{
+  border-color: #ff5151;
+  animation: shake 300ms 1 forwards;
+}
+@keyframes shake {
+  20%, 60%{
+    transform: translateX(4px);
+  }
+  40%, 80%{
+    transform: translateX(-4px);
+  }
+}
+input.add-event-edit::-webkit-input-placeholder {
+   color: #fff;
+}
+
+input.add-event-edit:-moz-placeholder { /* Firefox 18- */
+   color: #fff;  
+}
+
+input.add-event-edit::-moz-placeholder {  /* Firefox 19+ */
+   color: #fff;  
+}
+
+input.add-event-edit:-ms-input-placeholder {  
+   color: #fff;  
+}
+.event-btn{
+  padding: 3px 8px;
+  border: 3px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  width: 65px;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.event-btn--save{
+  border-color: #fff;
+   background: #74c500;
+  color: #fff;
+  border-color: transparent;
+}
+.event-btn--save:hover{
+  box-shadow: 0px 2px 4px rgba(2,2,2,0.2);
+}
+.event-btn--cancel{
+  background: #ff5151;
+  color: #fff;
+  border-color: transparent;
+}
+.event-btn--cancel:hover{
+  box-shadow: 0px 2px 4px rgba(2,2,2,0.2);
+}
+/* .add-event-btn:hover, .add.event-btn:focus{
+  background: #00258e;
+  box-shadow: 0px -1px 2px rgba(3,2,2,0.2);
+} */
+.day-highlight .day-events-link{
+  border-bottom: 2px solid #222;
+  padding: 0;
+  cursor: pointer;
+}
+#add-event{
+  color: #04b6e2;
+  border-color: #04b6e2;
+}
+.day-view-exit{
+  position: absolute;
+  top: 24px;
+  line-height: 1em;
+  left: 22px;
+  font-size: 22px;
+  color: #252525;
+  font-family: 'Avenir', sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+  opacity: 0;
+  animation: popIn 200ms 1 forwards;
+  text-transform: uppercase;
+}
+.day-view-date{
+  position: absolute;
+  top: 19px;
+  right: 22px;
+  text-align: right;
+  font-size: 22px;
+  font-family: 'Avenir', sans-serif;
+  font-weight: 800;
+  color: #393939;
+  border-bottom: 2px solid #222;
+  cursor: pointer;
+}
+.day-inspiration-quote{
+  position: absolute;
+/*   top: 90px; */
+  margin-top: -40px;
+  left: 10%;
+  width: 80%;
+  height: calc(100% - 110px);
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #ddd;
+  line-height: 1.1em;
+  font-family: 'Avenir', sans-serif;
+  z-index: -1;
+}
+.day-event-list-ul{
+  list-style: none;
+  margin: auto;
+  width: 95%;
+  padding: 0;
+  max-height: 300px;
+  overflow: auto;
+}
+.day-event-list-ul li {
+  padding: 10px;
+  margin: 10px 0;
+/*   background: #04b6e2; */
+/*   box-shadow: 0px 1px 1px  rgba(2,2,2,0.5); */
+  position: relative;
+}
+.event-dates small{
+  font-size: 0.65em;
+  color: #444;
+}
+.event-dates{
+  font-weight: 800;
+  font-family: 'Avenir', sans-serif;
+  color: #04b6e2;
+  font-size: 18px;
+  text-transform: lowercase;
+/*   position: relative; */
+}
+.event-delete{
+  position: absolute;
+  right: 10px;
+  top: 0px;
+  font-size: 12px;
+  color: #f25656;
+  cursor: pointer;
+}
+.event-name{
+  font-size: 19px;
+  font-family: 'Avenir', sans-serif;
+  color: #222;
+  padding:10px;
+  background: #f7f7f7;
+  margin: 2px 0;
+  display: block;
+  text-transform: initial;
+}
+.calendar--day-view-active{
+  animation: popIn 200ms 1 forwards;
+  visibility: visible;
+  display: flex;
+  transition: visibility 0ms;
+
+}
+.calendar--view{
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+.cview__month{
+  width: 100%;
+  height:80px; 
+  line-height:80px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 22px;
+  font-family: 'Avenir', sans-serif;
+  padding-bottom: 20px;
+  color: #222;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: space-around;
+}
+.cview__month-last,.cview__month-next,.cview__month-current{
+  width: 33.33333%;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  color: #222;
+  position:relative;
+}
+.cview__month-last:hover,.cview__month-next:hover{
+  color: #22b0ff;
+}
+
+.cview__month-current{
+  font-size: 22px;
+  cursor: default;
+  animation: popIn 200ms 1 forwards;
+  transform: translateY(20px);
+  opacity: 0;
+  position: relative;
+}
+.cview__month-reset{
+  animation: none;
+}
+.cview__month-activate{
+  animation: popIn 100ms 1 forwards;
+}
+.cview--spacer, .cview__header, .cview--date{
+  width: 14.28571428571429%;
+  max-width: 14.28571428571429%;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: clip;
+  font-size: 14px;
+  font-weight: 400;
+}
+.cview--date{
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+}
+.has-events::after{
+  border-radius:100%;
+  animation: popIn 200ms 1 forwards;
+  background: rgba(255,255,255,0.95);
+  transform: scale(0);
+  content: '';
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 8px;
+  left: 12px;
+  
+}
+.cview--date:hover::before{
+  background: rgba(255,255,255,0.2);
+}
+.cview--date.today{
+  color: #111;  
+}
+.cview--date.today::before{
+  animation: popIn 200ms 1 forwards;
+  background: rgba(255,255,255,0.2);
+  transform: scale(0);
+  content:"오늘";
+  font-size:12px; color:#22b0ff; padding-top:28px;
+}
+@keyframes popIn{
+
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.cview--date::before{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  transform: scale(0.8);
+  z-index: 0;
+}
+.cview--date:hover{
+	color:#22b0ff;
+}
+.footer{
+  width: 100%;
+  bottom: 50px;
+  left: 0;
+  position: absolute;
+  font-size: 14px;
+  text-align: center;
+}
+.footer__link{
+  cursor: pointer;
+  padding: 6px 8px;
+  border: 1px solid #22b0ff;
+  border-radius:50px;
+  color:#22b0ff;
+  font-family:'돋움','sans-serif';
+  font-size:12px;
+
+}
+.footer__link:hover {
+	padding: 8px 10px;
+	color:#fff; 
+	background:#22b0ff;
+}
+#calendar-month-last,
+#calendar-month-next { text-indent:-9999px; }
+#calendar-month-last > span { 
+	position: absolute;
+	top: 12px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 10px;
+	height: 2px;
+	transform: rotate(45deg);
+	background: #22b0ff;
+}
+#calendar-month-last > span.la2 { top:0; 	transform: rotate(-45deg); }
+#calendar-month-next > span { 
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 10px;
+	height: 2px;
+	transform: rotate(45deg);
+	background: #22b0ff;
+}
+#calendar-month-next > span.ne2 { top:12px; transform: rotate(-45deg); }
+#dates { margin-top:20px;  }
+/*캘린더 E*/
