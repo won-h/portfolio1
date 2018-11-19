@@ -19,9 +19,9 @@ a { text-decoration:none; font-family: 'notokr', 'sans-serif';}
 #gnb ul.wrap li.mouse_ico { width:20px; height:35px ; background-position:-10px -10px; }
 #gnb ul.wrap li.keyboard_ico { width:38px; height:25px; background-position:-40px -15px; margin-top:5px; }
 
-#section1 { background-color:#1e6ed3; position:relative; }
-#section1 #loading { width:100%; height:100%; position:fixed; top:0; left:0; background-color:rgba(0,0,0,0.98);  z-index:99; }
-#section1 #loading span { position:absolute; top:-2px; left:0; bottom:0; right:0; margin:auto; transition:all .3s; color:#fff; width:14px; height:17px; 
+/*로딩*/
+#loading { width:100%; height:100%; position:fixed; top:0; left:0; background-color:rgba(0,0,0,0.98);  z-index:99; }
+#loading span { position:absolute; top:-2px; left:0; bottom:0; right:0; margin:auto; transition:all .3s; color:#fff; width:14px; height:17px; 
 	-webkit-animation-name: logo_spelling; /* Safari 4.0 - 8.0 */
 	-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
 	animation-name: logo_spelling;
@@ -42,11 +42,13 @@ a { text-decoration:none; font-family: 'notokr', 'sans-serif';}
 		66% { transform:translate(0,4px); }
 		100% { transform:translate(0,0); }
 	}
-#section1 #loading span.m { right:27px; animation-delay: 1s; -webkit-animation-delay: 1s;}
-#section1 #loading span.i1 { right:6px; animation-delay: 1.2s; -webkit-animation-delay: 1.2s;}
-#section1 #loading span.n { left:14px; animation-delay: 1.4s; -webkit-animation-delay: 1.4s;}
-#section1 #loading span.i2 { left:32px; animation-delay: 1.6s; -webkit-animation-delay: 1.6s;}
-#section1 #loading img.mini_logo { position:absolute; top:0; left:0; bottom:0; right:0; margin:auto; width:150px; }
+#loading span.m { left:-24px; animation-delay: 1s; -webkit-animation-delay: 1s;}
+#loading span.i1 { left:3px; animation-delay: 1.2s; -webkit-animation-delay: 1.2s;}
+#loading span.n { left:14px; animation-delay: 1.4s; -webkit-animation-delay: 1.4s;}
+#loading span.i2 { left:38px; animation-delay: 1.6s; -webkit-animation-delay: 1.6s;}
+#loading img.mini_logo { position:absolute; top:0; left:0; bottom:0; right:0; margin:auto; width:150px; }
+
+#section1 { background-color:#1e6ed3; position:relative; }
 #section1 .section1_title { max-width:810px; margin:0 auto; }
 #section1 .section1_title h1 { color:#fff; font-size:34px; letter-spacing:-1px; font-weight:400; margin-bottom:40px; }
 #section1 .section1_title h1 span { color:#ff8181; }
