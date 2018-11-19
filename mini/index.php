@@ -5,30 +5,33 @@
 	<link rel="stylesheet" href="./css/fullpage.min.css" />
 	<link rel="stylesheet" href="./css/mini_main.css" />
 	<link rel="stylesheet" type="text/css" href="../../font/font.css" />
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<![endif]-->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
 	<script type="text/javascript" src="./js/fullpage.js"></script>
 	<script type="text/javascript" src="./js/mini_main.js"></script>
 </head>
 <body>
 
-<div id="gnb" style="display:none;">
-	<div>
-		<ul class="wrap">
-			<li class="mouse_ico"></li>
-			<li class="keyboard_ico"></li>
-		</ul>
+	<div id="gnb" style="display:none;">
+		<div>
+			<ul class="wrap">
+				<li class="mouse_ico"></li>
+				<li class="keyboard_ico"></li>
+			</ul>
+		</div>
 	</div>
-</div>
-
+	<div id="loading">
+		<span class="m">M</span>
+		<span class="i1">I</span>
+		<span class="n">N</span>
+		<span class="i2">I</span>
+		<img class="mini_logo" src="./img/MINI_LOGO_white2.png" alt=""/>
+	</div>
 <div id="mini_wrap">
 	<div class="section active" id="section1">
-		<div id="loading">
-			<span class="m">M</span>
-			<span class="i1">I</span>
-			<span class="n">N</span>
-			<span class="i2">I</span>
-			<img class="mini_logo" src="./img/MINI_LOGO_white2.png" alt=""/>
-		</div>
 		<?php include_once './section1bg.php';?>
 		<div class="section1_title">
 			<h1><span>성년의날 기념</span> 대학생을 위한<br /><strong>드림카 지원 이벤트</strong></h1>
@@ -127,7 +130,7 @@
 
 		});
 	}
-	initialize(false);
+	initialize(true);
 
 </script>
 
